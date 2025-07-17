@@ -1,0 +1,64 @@
+2025-07-17 09:20:04.359 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:20:04.379 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:20:06.256 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:20:06.312 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:20:08.474 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 09:20:12.013 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 09:20:12.329 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 09:20:14.562 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 09:20:16.540 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 09:20:16.594 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 09:20:16.594 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 09:20:17.490 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 09:20:17.506 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 09:20:17.511 [main] INFO  utilities.excelUtil - Wrote 2 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 09:20:17.663 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 09:20:17.666 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 09:20:20.562 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:20:20.604 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:20:20.620 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:20:22.200 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:20:22.257 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:20:24.263 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 09:20:27.370 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 09:20:27.458 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Albeta Manual Recliner - 3 Year Warranty, Blue | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹10,997
+2025-07-17 09:20:27.498 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Carrera Manual Recliner-3 Years Warranty, Light Grey |1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric| Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹13,448
+2025-07-17 09:20:27.523 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Manila Manual Recliner- 3 Years Warranty, Dark Grey | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹11,522
+2025-07-17 09:20:27.524 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 09:20:27.546 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 09:20:27.547 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 09:20:27.550 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 09:20:27.563 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 09:20:27.564 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 09:20:27.565 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 09:20:30.062 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:20:30.087 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:20:30.099 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:20:31.698 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:20:31.754 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:20:33.692 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 09:20:36.496 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 09:20:38.551 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 09:20:38.712 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 09:20:38.865 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 09:20:39.098 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 09:20:39.137 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 09:20:39.137 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 09:20:41.876 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:20:41.908 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:20:41.955 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:20:43.622 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:20:43.683 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:20:45.591 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 09:20:45.811 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 09:20:46.661 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 09:20:46.859 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 09:20:47.763 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 09:20:47.795 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 09:20:47.798 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 09:20:47.807 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 09:20:47.830 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 09:20:47.830 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 09:20:47.944 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 09:20:47.945 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 09:20:50.220 [main] INFO  hooks.Hooks - Browser closed.
