@@ -15,7 +15,6 @@ public class SearchResultsPage {
     private WebDriver driver;
     private static final Logger logger = LogManager.getLogger(SearchResultsPage.class);
 
-    private By searchResultsTitle = By.xpath("//span[contains(@class, 'a-color-state a-text-bold')]");
     private By priceSliderForm = By.cssSelector("form[data-slider-id='p_36/range-slider']");
     private By goButton = By.cssSelector("input[type='submit'][aria-label='Go - Submit price range']");
     private By includeOutOfStockCheckbox = By.xpath("//a[.//span[text()='Include Out of Stock']]");

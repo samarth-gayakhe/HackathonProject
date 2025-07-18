@@ -883,3 +883,69 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 2025-07-18 09:08:33.356 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
 2025-07-18 09:08:34.478 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/alkdjf;la
 2025-07-18 09:08:47.255 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-18 09:16:18.261 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 09:16:18.310 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 09:16:20.355 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-18 09:16:20.391 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-18 09:16:22.510 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-18 09:16:26.083 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-18 09:16:26.357 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-18 09:16:28.237 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-18 09:16:30.079 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,760
+2025-07-18 09:16:30.159 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-18 09:16:30.212 [main] INFO  pages.SearchResultsPage - Captured result - Title: ABOUT SPACE Open Book Shelf Book Storage Display Rack - Engineered Wood Multipurpose Book Storage Display Organizer Rack with Solid Finish Showcase Stand (L 47 x W 20.8 x H 141.2 cm), Price: ₹3,299
+2025-07-18 09:16:30.213 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-18 09:16:31.092 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-18 09:16:31.103 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-18 09:16:31.110 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Bookshelves
+2025-07-18 09:16:31.276 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-18 09:16:31.277 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-18 09:16:31.280 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-18 09:16:34.609 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-18 09:16:34.648 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 09:16:34.670 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 09:16:36.432 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-18 09:16:36.467 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-18 09:16:38.437 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-18 09:16:41.954 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-18 09:16:42.019 [main] INFO  pages.SearchResultsPage - Captured result - Title: Wooden Street Valencia Leatherette 1 Seater Motorized Recliner Sofa | Single Seater Recliner Chairs for Home and Office with 1 Year Warranty | Saddle Brown, Price: ₹30,743
+2025-07-18 09:16:42.038 [main] INFO  pages.SearchResultsPage - Captured result - Title: Amazon Brand - Umi Scandinavian Modern Mid Century Classic Style Molded Plastic Side Dining Room Chair with Natural Wood Leg, Heavy Duty for Dining Room for Cafeteria, Restaurant Chair in White Color, Price: ₹3,899
+2025-07-18 09:16:42.074 [main] INFO  pages.SearchResultsPage - Captured result - Title: MRC Metal Folding Chair with Super Soft Cushion Seat Upholstered Leatherette for Space-Saving Design for Home, Office, and Dorm Rooms Kitchen,Work,Sturdy,Garden,Balcony,Restaurant Chair - Black, Price: ₹2,499
+2025-07-18 09:16:42.075 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-18 09:16:42.101 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-18 09:16:42.103 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-18 09:16:42.105 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-18 09:16:42.128 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-18 09:16:42.129 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-18 09:16:42.130 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-18 09:16:44.681 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-18 09:16:44.702 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 09:16:44.716 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 09:16:46.373 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-18 09:16:46.425 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-18 09:16:48.638 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-18 09:16:51.644 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-18 09:16:55.907 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-18 09:16:56.033 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-18 09:16:56.197 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-18 09:16:56.508 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-18 09:16:56.554 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-18 09:16:56.556 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-18 09:16:59.927 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-18 09:16:59.964 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 09:16:59.989 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 09:17:02.077 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-18 09:17:02.156 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-18 09:17:03.977 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-18 09:17:05.232 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-18 09:17:06.164 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-18 09:17:06.378 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-18 09:17:07.726 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-18 09:17:07.768 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-18 09:17:07.771 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-18 09:17:07.783 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-18 09:17:07.813 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-18 09:17:07.814 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-18 09:17:08.003 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-18 09:17:08.007 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-18 09:17:10.618 [main] INFO  hooks.Hooks - Browser closed.

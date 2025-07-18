@@ -5,3 +5,4 @@ Feature: Bookshelves Search and Filter
     When user searches "open bookshelves"
     And filter the results with price less than "15000" and include out of stock
     Then save the top 3 results in excel sheet
+    Then Close the browser
