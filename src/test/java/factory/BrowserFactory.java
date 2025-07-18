@@ -21,7 +21,7 @@ public class BrowserFactory {
                 logger.info("Launched Chrome browser.");
                 break;
             case "edge":
-                WebDriverManager.edgedriver().setup();
+//                WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
                 logger.info("Launched Edge browser.");
                 break;

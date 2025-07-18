@@ -62,3 +62,824 @@
 2025-07-17 09:20:47.944 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
 2025-07-17 09:20:47.945 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
 2025-07-17 09:20:50.220 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:28:50.383 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_138_WINDOWS to get latest version of msedgedriver (No such host is known (msedgedriver.azureedge.net))
+2025-07-17 09:28:50.388 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:50.389 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:50.392 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:50.399 [main] WARN  io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+2025-07-17 09:28:50.404 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:50.404 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:50.406 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:50.409 [main] ERROR io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at factory.BrowserFactory.getBrowser(BrowserFactory.java:24)
+	at hooks.Hooks.setupBrowser(Hooks.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:68)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:80)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 58 more
+2025-07-17 09:28:51.394 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_138_WINDOWS to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:51.395 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:51.396 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:51.397 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:51.401 [main] WARN  io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+2025-07-17 09:28:51.403 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:51.404 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:51.405 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:51.407 [main] ERROR io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at factory.BrowserFactory.getBrowser(BrowserFactory.java:24)
+	at hooks.Hooks.setupBrowser(Hooks.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:68)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:80)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 58 more
+2025-07-17 09:28:52.276 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_138_WINDOWS to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:52.277 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:52.278 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:52.279 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:52.281 [main] WARN  io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+2025-07-17 09:28:52.284 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:52.284 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:52.285 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:52.287 [main] ERROR io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at factory.BrowserFactory.getBrowser(BrowserFactory.java:24)
+	at hooks.Hooks.setupBrowser(Hooks.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:68)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:80)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 58 more
+2025-07-17 09:28:53.187 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_138_WINDOWS to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:53.188 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:53.189 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:53.190 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:53.193 [main] WARN  io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+2025-07-17 09:28:53.195 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:53.196 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2025-07-17 09:28:53.197 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2025-07-17 09:28:53.199 [main] ERROR io.github.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at factory.BrowserFactory.getBrowser(BrowserFactory.java:24)
+	at hooks.Hooks.setupBrowser(Hooks.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:68)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:80)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 58 more
+2025-07-17 09:42:31.671 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:42:31.685 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:42:33.484 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:42:33.536 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:42:35.695 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 09:42:38.769 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 09:42:39.069 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 09:42:42.595 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 09:42:44.271 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 09:42:44.302 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 09:42:44.352 [main] INFO  pages.SearchResultsPage - Captured result - Title: ABOUT SPACE Open Book Shelf Book Storage Display Rack - Engineered Wood Multipurpose Book Storage Display Organizer Rack with Solid Finish Showcase Stand (L 47 x W 20.8 x H 141.2 cm), Price: ₹3,299
+2025-07-17 09:42:44.352 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 09:42:45.192 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 09:42:45.206 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 09:42:45.230 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 09:42:45.412 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 09:42:45.412 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 09:42:48.378 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:42:48.410 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:42:48.429 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:42:49.932 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:42:49.980 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:42:52.186 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 09:42:55.356 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 09:42:55.427 [main] INFO  pages.SearchResultsPage - Captured result - Title: Amazon Brand - Umi Scandinavian Modern Mid Century Classic Style Molded Plastic Side Dining Room Chair with Natural Wood Leg, Heavy Duty for Dining Room for Cafeteria, Restaurant Chair in White Color, Price: ₹3,899
+2025-07-17 09:42:55.452 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Albeta Manual Recliner - 3 Year Warranty, Blue | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹10,997
+2025-07-17 09:42:55.491 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Carrera Manual Recliner-3 Years Warranty, Light Grey |1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric| Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹13,448
+2025-07-17 09:42:55.492 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 09:42:55.518 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 09:42:55.519 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 09:42:55.521 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 09:42:55.539 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 09:42:55.540 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 09:42:55.541 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 09:42:58.225 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:42:58.239 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:42:58.248 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:42:59.754 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:42:59.813 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:43:01.793 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 09:43:04.912 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 09:43:07.319 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 09:43:07.450 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 09:43:07.587 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 09:43:07.846 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 09:43:07.895 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 09:43:07.897 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 09:43:10.540 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:43:10.558 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:43:10.571 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:43:12.195 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:43:12.222 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:43:14.181 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 09:43:14.351 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 09:43:18.126 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 09:48:03.108 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 09:48:03.127 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 09:48:04.954 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 09:48:04.991 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 09:48:06.948 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 09:48:07.141 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 09:48:08.055 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 09:48:08.186 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 09:48:09.039 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 09:48:09.416 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 09:48:09.424 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 09:48:09.437 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 09:48:09.537 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 09:48:09.538 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 09:48:09.658 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 09:48:09.660 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 09:48:11.907 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:19:03.235 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:19:03.375 [main] INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win64/chromedriver-win64.zip
+2025-07-17 10:19:04.611 [main] INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2025-07-17 10:19:05.223 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:19:08.406 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:19:08.490 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:19:11.914 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:19:18.396 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 10:19:19.908 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 10:19:24.859 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 10:19:26.511 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 10:19:27.750 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 10:19:27.750 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:19:29.315 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 10:19:29.344 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 10:19:29.349 [main] INFO  utilities.excelUtil - Wrote 2 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 10:19:29.677 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:19:29.679 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 10:19:30.182 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:19:30.457 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:19:30.466 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:19:32.528 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:19:32.587 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:19:35.930 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:19:41.673 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 10:19:42.221 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Albeta Manual Recliner - 3 Year Warranty, Blue | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹10,997
+2025-07-17 10:19:42.408 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Carrera Manual Recliner-3 Years Warranty, Light Grey |1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric| Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹13,448
+2025-07-17 10:19:42.703 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Manila Manual Recliner- 3 Years Warranty, Dark Grey | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹11,522
+2025-07-17 10:19:42.703 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:19:42.784 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 10:19:42.784 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 10:19:42.792 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 10:19:42.844 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:19:42.844 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 10:19:42.850 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:19:43.261 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:19:43.311 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:19:43.328 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:19:45.149 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:19:45.199 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:19:48.634 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:19:53.239 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 10:19:56.197 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 10:19:56.539 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 10:19:56.873 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 10:19:57.327 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 10:19:57.401 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 10:19:57.401 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:19:57.826 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:19:57.891 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:19:57.920 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:19:59.734 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:19:59.797 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:20:03.439 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 10:20:04.347 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 10:20:05.202 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 10:20:05.513 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 10:20:08.002 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:20:08.095 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 10:20:08.103 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 10:20:08.136 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 10:20:08.186 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:20:08.186 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 10:20:08.579 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 10:20:08.585 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:20:09.010 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:23:14.646 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:23:14.749 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:23:18.252 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:23:23.840 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 10:23:25.672 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 10:23:29.868 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 10:23:32.484 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 10:23:32.818 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 10:23:33.192 [main] INFO  pages.SearchResultsPage - Captured result - Title: ABOUT SPACE Open Book Shelf Book Storage Display Rack - Engineered Wood Multipurpose Book Storage Display Organizer Rack with Solid Finish Showcase Stand (L 47 x W 20.8 x H 141.2 cm), Price: ₹3,299
+2025-07-17 10:23:33.196 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:23:34.612 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 10:23:34.639 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 10:23:34.647 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 10:23:34.965 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:23:34.972 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 10:23:39.193 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:23:43.253 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:23:43.345 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:23:46.882 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:23:53.793 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 10:23:54.030 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Albeta Manual Recliner - 3 Year Warranty, Blue | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹10,997
+2025-07-17 10:23:54.084 [main] INFO  pages.SearchResultsPage - Captured result - Title: Amazon Brand - Umi Scandinavian Modern Mid Century Classic Style Molded Plastic Side Dining Room Chair with Natural Wood Leg, Heavy Duty for Dining Room for Cafeteria, Restaurant Chair in White Color, Price: ₹3,899
+2025-07-17 10:23:54.145 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Carrera Manual Recliner-3 Years Warranty, Light Grey |1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric| Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹13,448
+2025-07-17 10:23:54.145 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:23:54.218 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 10:23:54.233 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 10:23:54.233 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 10:23:54.296 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:23:54.296 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 10:23:54.296 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:23:57.975 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:24:02.057 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:24:02.153 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:24:05.737 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:24:10.914 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 10:24:14.135 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 10:24:14.515 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 10:24:14.873 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 10:24:15.473 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 10:24:15.559 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 10:24:15.565 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:24:19.371 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:24:23.135 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:24:23.213 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:24:26.811 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 10:24:27.491 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 10:24:28.249 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 10:24:28.553 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 10:24:30.603 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:24:30.693 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 10:24:30.693 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 10:24:30.739 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 10:24:30.833 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:24:30.833 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 10:24:31.655 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 10:24:31.662 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:24:35.682 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:25:24.967 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:25:25.070 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:25:28.692 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:25:35.356 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 10:25:36.133 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 10:25:39.863 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 10:25:42.627 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 10:25:42.749 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 10:25:42.890 [main] INFO  pages.SearchResultsPage - Captured result - Title: ABOUT SPACE Open Book Shelf Book Storage Display Rack - Engineered Wood Multipurpose Book Storage Display Organizer Rack with Solid Finish Showcase Stand (L 47 x W 20.8 x H 141.2 cm), Price: ₹3,299
+2025-07-17 10:25:42.898 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:25:44.735 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 10:25:44.760 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 10:25:44.768 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 10:25:45.085 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:25:45.100 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 10:25:49.239 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:25:53.376 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:25:53.476 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:25:56.209 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:26:01.940 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 10:26:02.362 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Albeta Manual Recliner - 3 Year Warranty, Blue | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹10,997
+2025-07-17 10:26:02.695 [main] INFO  pages.SearchResultsPage - Captured result - Title: Amazon Brand - Umi Scandinavian Modern Mid Century Classic Style Molded Plastic Side Dining Room Chair with Natural Wood Leg, Heavy Duty for Dining Room for Cafeteria, Restaurant Chair in White Color, Price: ₹3,899
+2025-07-17 10:26:02.890 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Carrera Manual Recliner-3 Years Warranty, Light Grey |1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric| Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹13,448
+2025-07-17 10:26:02.895 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:26:03.003 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 10:26:03.003 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 10:26:03.012 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 10:26:03.070 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:26:03.070 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 10:26:03.078 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:26:06.992 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:26:11.088 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:26:11.177 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:26:14.252 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:26:18.960 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 10:26:21.603 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 10:26:21.905 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 10:26:22.218 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 10:26:22.729 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 10:26:22.788 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 10:26:22.788 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:26:26.371 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:26:30.239 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:26:30.325 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:26:33.424 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 10:26:35.353 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 10:26:36.101 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 10:26:36.402 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 10:26:38.776 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:26:38.854 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 10:26:38.868 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 10:26:38.892 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 10:26:38.934 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:26:38.934 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 10:26:39.211 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 10:26:39.217 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:26:42.571 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:27:05.046 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:27:05.139 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:27:08.462 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:27:14.130 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 10:27:15.325 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 10:27:18.912 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 10:27:21.957 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 10:27:22.318 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 10:27:22.327 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:27:23.840 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 10:27:23.857 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 10:27:23.873 [main] INFO  utilities.excelUtil - Wrote 2 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 10:27:24.139 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:27:24.139 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 10:27:28.028 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:27:31.867 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:27:31.953 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:27:35.178 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:27:40.546 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 10:27:40.792 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Albeta Manual Recliner - 3 Year Warranty, Blue | 1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric | Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹10,997
+2025-07-17 10:27:40.996 [main] INFO  pages.SearchResultsPage - Captured result - Title: Amazon Brand - Umi Scandinavian Modern Mid Century Classic Style Molded Plastic Side Dining Room Chair with Natural Wood Leg, Heavy Duty for Dining Room for Cafeteria, Restaurant Chair in White Color, Price: ₹3,899
+2025-07-17 10:27:41.046 [main] INFO  pages.SearchResultsPage - Captured result - Title: Peachtree Carrera Manual Recliner-3 Years Warranty, Light Grey |1 Seater Chair Sofa | 3 Modes of Comfort | Mango Wooden Frame with Suede Fabric| Single Seater Sofa Recliner for Living Room Bedroom, Price: ₹13,448
+2025-07-17 10:27:41.046 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:27:41.138 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 10:27:41.138 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 10:27:41.138 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 10:27:41.217 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:27:41.217 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 10:27:41.217 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:27:44.781 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:27:48.458 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:27:48.542 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:27:51.500 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:27:56.479 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 10:27:59.127 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 10:27:59.343 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 10:27:59.637 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 10:28:00.055 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 10:28:00.142 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 10:28:00.151 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:28:03.634 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:28:07.324 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:28:07.416 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:28:10.304 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 10:28:11.338 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 10:28:12.175 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 10:28:12.452 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 10:28:14.855 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:28:14.975 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 10:28:14.975 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 10:28:15.022 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 10:28:15.095 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:28:15.095 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 10:28:15.350 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 10:28:15.350 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:28:18.352 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:37:10.575 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:37:10.609 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:37:13.481 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:37:13.567 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:37:17.602 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:37:24.113 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 10:37:25.323 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 10:37:29.557 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 10:37:33.231 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 10:37:33.377 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 10:37:33.587 [main] INFO  pages.SearchResultsPage - Captured result - Title: ABOUT SPACE Open Book Shelf Book Storage Display Rack - Engineered Wood Multipurpose Book Storage Display Organizer Rack with Solid Finish Showcase Stand (L 47 x W 20.8 x H 141.2 cm), Price: ₹3,299
+2025-07-17 10:37:33.592 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:37:35.332 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 10:37:35.362 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 10:37:35.381 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 10:37:35.723 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:37:35.723 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 10:37:40.090 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:38:08.594 [main] INFO  factory.BrowserFactory - Launched Edge browser.
+2025-07-17 10:38:08.694 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:38:12.033 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 10:38:16.918 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 10:38:18.086 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 10:38:21.376 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 10:38:24.795 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 10:38:25.031 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 10:38:25.174 [main] INFO  pages.SearchResultsPage - Captured result - Title: ABOUT SPACE Open Book Shelf Book Storage Display Rack - Engineered Wood Multipurpose Book Storage Display Organizer Rack with Solid Finish Showcase Stand (L 47 x W 20.8 x H 141.2 cm), Price: ₹3,299
+2025-07-17 10:38:25.178 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:38:26.725 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 10:38:26.749 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 10:38:26.766 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 10:38:27.036 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:38:27.036 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 10:38:31.033 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:57:15.360 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:57:15.385 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:57:19.059 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:57:19.171 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:57:20.647 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/aljdf;lakf
+2025-07-17 10:57:40.200 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 10:58:53.679 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 10:58:53.736 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 10:58:57.866 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 10:58:58.005 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 10:59:02.741 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 10:59:04.128 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 10:59:05.389 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 10:59:06.007 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 10:59:08.809 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 10:59:10.321 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 10:59:10.350 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 10:59:10.398 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 10:59:10.825 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 10:59:10.828 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 10:59:11.364 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 10:59:11.369 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 10:59:16.139 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 12:29:07.498 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 12:29:07.529 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 12:29:11.193 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 12:29:11.289 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 12:29:14.674 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 12:29:20.924 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: open bookshelves
+2025-07-17 12:29:22.009 [main] INFO  pages.SearchResultsPage - Filtered results with price less than: 15000
+2025-07-17 12:29:25.517 [main] INFO  pages.SearchResultsPage - Clicked 'Include Out of Stock' checkbox.
+2025-07-17 12:29:28.131 [main] INFO  pages.SearchResultsPage - Captured result - Title: Best seller, Price: ₹2,599
+2025-07-17 12:29:28.526 [main] INFO  pages.SearchResultsPage - Captured result - Title: Lukzer 8 Shelves Modern Simple Engineered Wood Book Shelf with Storage Display Rack Open Bookcase Showcase Stand (MR-004/White/164 x 24 x 70 cm) DIY (Do It Yourself), Price: ₹3,418
+2025-07-17 12:29:28.528 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 12:29:30.330 [main] INFO  utilities.excelUtil - Clearing content of sheet: Bookshelves
+2025-07-17 12:29:30.377 [main] INFO  utilities.excelUtil - Added header to sheet: Bookshelves
+2025-07-17 12:29:30.393 [main] INFO  utilities.excelUtil - Wrote 2 rows of Title/Price data to sheet: Bookshelves
+2025-07-17 12:29:30.726 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 12:29:30.726 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Bookshelves
+2025-07-17 12:29:34.900 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 12:29:34.962 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 12:29:34.997 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 12:29:37.607 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 12:29:37.679 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 12:29:41.098 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 12:29:47.010 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: chairs
+2025-07-17 12:29:47.647 [main] INFO  pages.SearchResultsPage - Captured result - Title: Amazon Brand - Umi Scandinavian Modern Mid Century Classic Style Molded Plastic Side Dining Room Chair with Natural Wood Leg, Heavy Duty for Dining Room for Cafeteria, Restaurant Chair in White Color, Price: ₹3,899
+2025-07-17 12:29:48.007 [main] INFO  pages.SearchResultsPage - Captured result - Title: Homiboss Plastic Chair Set of 4, kursi, Chairs for Home, Office, Outdoor and Indoor Color - Brown Set of 4 Pieces, Price: ₹2,099
+2025-07-17 12:29:48.146 [main] INFO  pages.SearchResultsPage - Captured result - Title: AVRO FURNITURE 7756 Plastic Chair |Set Of 4 |Matt And Gloss Pattern |For Dining Room, Bedroom, Kitchen, Living Room |Bearing Capacity Up To 150Kg |Strong & Sturdy Structure |1 Year Guarantee (Brown), Price: ₹2,449
+2025-07-17 12:29:48.150 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 12:29:48.289 [main] INFO  utilities.excelUtil - Clearing content of sheet: Chairs
+2025-07-17 12:29:48.298 [main] INFO  utilities.excelUtil - Added header to sheet: Chairs
+2025-07-17 12:29:48.305 [main] INFO  utilities.excelUtil - Wrote 3 rows of Title/Price data to sheet: Chairs
+2025-07-17 12:29:48.436 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 12:29:48.441 [main] INFO  pages.SearchResultsPage - Saved top 3 results to Excel sheet: Chairs
+2025-07-17 12:29:48.445 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 12:29:51.985 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 12:29:52.026 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 12:29:52.074 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 12:29:54.517 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 12:29:54.589 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 12:29:57.572 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/
+2025-07-17 12:30:02.059 [main] INFO  stepDefinitions.CommonStepDefinitions - Searched for: amazon gift card
+2025-07-17 12:30:04.973 [main] INFO  pages.SearchResultsPage - Clicked on the first search result.
+2025-07-17 12:30:05.204 [main] INFO  pages.GiftCardPage - Selected 'Happy Birthday' design.
+2025-07-17 12:30:05.578 [main] INFO  pages.GiftCardPage - Clicked 'Send as Email' button.
+2025-07-17 12:30:06.069 [main] INFO  pages.GiftCardPage - Entered invalid email: test@invalid and sender name: John Doe
+2025-07-17 12:30:06.156 [main] INFO  pages.GiftCardPage - Verified error message is displayed: Email address must contain a domain, like chris@example.com
+2025-07-17 12:30:06.156 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 12:30:09.610 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 12:30:09.664 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 12:30:09.696 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 12:30:12.252 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 12:30:12.308 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 12:30:15.220 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in
+2025-07-17 12:30:16.648 [main] INFO  pages.AmazonHomePage - Clicked 'All' hamburger menu.
+2025-07-17 12:30:17.216 [main] INFO  pages.HamburgerMenuPage - Clicked 'See All' button in hamburger menu.
+2025-07-17 12:30:17.512 [main] INFO  pages.HamburgerMenuPage - Clicked 'Home, Kitchen, Pets' category.
+2025-07-17 12:30:19.941 [main] INFO  utilities.excelUtil - Loading existing workbook: data.xlsx
+2025-07-17 12:30:20.016 [main] INFO  utilities.excelUtil - Clearing content of sheet: HomeAndKitchen
+2025-07-17 12:30:20.016 [main] INFO  utilities.excelUtil - Added header to sheet: HomeAndKitchen
+2025-07-17 12:30:20.033 [main] INFO  utilities.excelUtil - Wrote 32 rows of List data to sheet: HomeAndKitchen
+2025-07-17 12:30:20.095 [main] INFO  utilities.excelUtil - Data written to data.xlsx
+2025-07-17 12:30:20.095 [main] INFO  pages.HamburgerMenuPage - Stored Home & Kitchen subcategories in Excel.
+2025-07-17 12:30:20.366 [main] INFO  pages.HamburgerMenuPage - Closed the hamburger menu.
+2025-07-17 12:30:20.369 [main] INFO  stepDefinitions.CommonStepDefinitions - Close browser step executed. Browser is closed by @After hook.
+2025-07-17 12:30:23.333 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-17 12:34:16.616 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-17 12:34:16.679 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-17 12:34:19.617 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-17 12:34:19.679 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-17 12:34:21.125 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/kyffg
+2025-07-17 12:34:36.643 [main] INFO  hooks.Hooks - Browser closed.
+2025-07-18 09:08:31.262 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 09:08:31.292 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\2408468\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 09:08:33.293 [main] INFO  factory.BrowserFactory - Launched Chrome browser.
+2025-07-18 09:08:33.356 [main] INFO  hooks.Hooks - Browser launched and WebDriver initialized.
+2025-07-18 09:08:34.478 [main] INFO  stepDefinitions.CommonStepDefinitions - Navigated to URL: https://www.amazon.in/alkdjf;la
+2025-07-18 09:08:47.255 [main] INFO  hooks.Hooks - Browser closed.

@@ -20,14 +20,6 @@ public class AmazonHomePage {
         this.driver = driver;
     }
 
-    public void enterSearchText(String product) {
-        WebElement searchInput = driver.findElement(searchTextBox);
-        searchInput.click();
-        Actions actions = new Actions(driver);
-        actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(product).build().perform();
-        logger.info("Entered search text: " + product);
-    }
-
     public SearchResultsPage clickSearchButton() {
         driver.findElement(searchSubmitButton).click();
         logger.info("Clicked search submit button.");

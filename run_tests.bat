@@ -9,4 +9,4 @@ call mvn clean test -P edge
 echo.
 echo All tests completed.
 echo Check the target/surefire-reports folder for results.
-pause
+exit

@@ -10,7 +10,9 @@ import org.junit.runner.RunWith;
         //features= {".//chair.feature"},
 //        features= {"@target/rerun.txt"},
         glue = {"stepDefinitions", "utilities", "hooks"},
-        plugin = {"pretty", "html:cucumber-reports/cucumber-html-report.html",
+        plugin = {
+                "pretty", "html:cucumber-reports/cucumber-html-report.html"
+//                "pretty", "html:cucumber-reports/cucumber-failed-rerun-html-report.html",
                 "json:target/cucumber-reports/cucumber.json",
                 "rerun:target/rerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
