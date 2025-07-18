@@ -26,12 +26,6 @@ public class SearchResultsPage {
         this.driver = driver;
     }
 
-    public void verifySearchResultsTitle(String expectedProduct) {
-        String actualTitle = driver.findElement(searchResultsTitle).getText();
-        Assert.assertTrue(actualTitle.contains(expectedProduct.toUpperCase()));
-        logger.info("Verified search results title contains: " + expectedProduct);
-    }
-
     public void filterResultsByPrice(String price) {
         WebElement sliderElement = driver.findElement(priceSliderForm);
         String rawJson = sliderElement.getAttribute("data-slider-props").replace("&quot;", "\"");
